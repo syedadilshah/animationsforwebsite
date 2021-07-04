@@ -1,0 +1,96 @@
+.logo h1 
+{
+    font-size: 1.3rem;
+}
+.nav-btnz {
+    border: 1px solid black;
+ 
+    padding: 10px 30px !important;
+    border-radius: 50px;
+}
+.slider {
+    position: relative;
+    ;
+}
+
+.slides {
+
+height: 100vh;
+}
+header
+{
+ background-image: url('../images/Arabic-language-article@1X.png');
+    
+}
+.second-wrapper{
+    background:red;
+    height: 100px;
+    margin-top: -80px;
+    z-index: 2434;
+}
+.team-image{
+    position: relative;
+}
+.team-image::before{
+    position: absolute;
+    content: "";
+    top: 30px;
+    left:30px;
+    right:30px;
+    bottom: 30px;
+   
+ transition: all .3s;
+ 
+   
+
+    background: #eee;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+.team-wrapper:hover .team-image::before{
+    opacity: .5;
+    visibility: visible;
+}
+.team-wrapper:hover .team-info {
+    opacity: 1;
+    visibility: visible;
+}
+.team-info {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    transition: all .3s ease-in;
+}
+
+.custom-accordian button {
+    width: 100%;
+}
+.custom-accordian button.accordion-button:before{
+    content:"-";
+}
+.custom-accordian button.accordion-button.collapsed:before{
+    content:"+";
+}
+.pimage img {
+    width: 100%;
+}
+.pimage{
+    position: relative;
+    overflow: hidden;
+}
+.second-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+    transform: translateY(-100%);
+}
+.pimage:hover .second-image {
+    opacity: 1;
+    transform: translateX(0);
+}
